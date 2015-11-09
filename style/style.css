@@ -1,0 +1,63 @@
+/* Flexing it up */
+
+nav {
+    display: flex;
+    justify-content:space-around;
+    list-style: none;
+    margin: 0;
+
+}
+
+article > article {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+
+
+/* layout */
+
+body {
+    max-height: 100vh;
+}
+
+header {
+    max-height: 15vh;
+}
+
+#websmith, #ember, #angular, #react, #backbone {
+    height: 75vh;
+}
+
+
+/* Nav styling*/
+
+figure img {
+   height: 10vh;
+   width: auto;
+}
+
+figcaption {
+    font-size: 1.3em;
+    text-align: center;
+}
+
+
+@media screen {
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+
+}
+
+aside {
+    width: 20%;
+    text-align: center;
+}
