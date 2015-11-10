@@ -2,9 +2,17 @@
 
 nav {
     display: flex;
+<<<<<<< HEAD
     justify-content:space-around;
     list-style: none;
     margin: 0;
+=======
+    flex-wrap: wrap;
+    justify-content:space-around;
+    list-style: none;
+    margin: 0;
+
+>>>>>>> Added the projekt as current.
 
 }
 
@@ -14,6 +22,7 @@ article > article {
 
 .show {
     display: flex;
+<<<<<<< HEAD
 }
 
 
@@ -36,16 +45,70 @@ header {
 /* Nav styling*/
 
 figure img {
+=======
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    order: -1;
+    background-color: tomato;
+    text-align: center;
+}
+
+aside, footer {
+    width: 100vw;
+
+}
+
+footer {
+    height: 10vh;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+/* layout */
+
+header {
+    max-height: 15vh;
+
+}
+
+
+
+
+/* Nav styling*/
+
+figure img {
+   display: none;
+>>>>>>> Added the projekt as current.
    height: 10vh;
    width: auto;
 }
 
+<<<<<<< HEAD
 figcaption {
     font-size: 1.3em;
+=======
+figure img:hover {
+    zoom: 1.05;
+}
+figcaption {
+    font-size: 1.3em;
+    font-weight: bold;
+>>>>>>> Added the projekt as current.
     text-align: center;
 }
 
 
+<<<<<<< HEAD
 @media screen {
 
 }
@@ -61,3 +124,51 @@ aside {
     width: 20%;
     text-align: center;
 }
+=======
+/*Color */
+
+body {
+    background: -webkit-linear-gradient(90deg, #70e1f5 10%, #ffd194 90%); /* Chrome 10+, Saf5.1+ */
+    background:    -moz-linear-gradient(90deg, #70e1f5 10%, #ffd194 90%); /* FF3.6+ */
+    background:     -ms-linear-gradient(90deg, #70e1f5 10%, #ffd194 90%); /* IE10 */
+    background:      -o-linear-gradient(90deg, #70e1f5 10%, #ffd194 90%); /* Opera 11.10+ */
+    background:         linear-gradient(90deg, #70e1f5 10%, #ffd194 90%); /* W3C */
+
+}
+
+@media (min-width: 800px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        max-width: 60vw;
+        border-radius: 2em;
+        order: 0;
+    }
+    #websmith, #ember, #angular, #react, #backbone {
+        height: 75vh;
+    }
+    aside {
+        width: 20vw;
+        text-align: center;
+    }
+
+    figure img {
+        display: inline-block;
+        height: 10vh;
+        width: auto;
+    }
+
+    .show {
+        flex-direction: row;
+    }
+
+
+    body {
+        max-height: 100vh;
+    }
+
+    /* Colors */
+
+   }
+
+>>>>>>> Added the projekt as current.
