@@ -1,58 +1,53 @@
 /* Flexing it up */
 
 nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-<<<<<<< HEAD
-    justify-content:space-around;
-    list-style: none;
-    margin: 0;
-=======
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-justify-content:space-around;
+    -ms-flex-pack:distribute;
     justify-content:space-around;
     list-style: none;
     margin: 0;
 
->>>>>>> Added the projekt as current.
 
 }
+
 
 article > article {
     display: none;
 }
 
 .show {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-<<<<<<< HEAD
-}
-
-
-
-/* layout */
-
-body {
-    max-height: 100vh;
-}
-
-header {
-    max-height: 15vh;
-}
-
-#websmith, #ember, #angular, #react, #backbone {
-    height: 75vh;
-}
-
-
-/* Nav styling*/
-
-figure img {
-=======
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 .content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
     flex-direction: column;
     width: 100vw;
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+    -ms-flex-order: -1;
     order: -1;
     background-color: tomato;
     text-align: center;
@@ -87,61 +82,41 @@ header {
 /* Nav styling*/
 
 figure img {
-   display: none;
->>>>>>> Added the projekt as current.
-   height: 10vh;
-   width: auto;
+    display: none;
+    height: 10vh;
+    width: auto;
 }
 
-<<<<<<< HEAD
-figcaption {
-    font-size: 1.3em;
-=======
 figure img:hover {
     zoom: 1.05;
 }
 figcaption {
     font-size: 1.3em;
     font-weight: bold;
->>>>>>> Added the projekt as current.
     text-align: center;
 }
 
 
-<<<<<<< HEAD
-@media screen {
-
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    max-width: 60%;
-
-}
-
-aside {
-    width: 20%;
-    text-align: center;
-}
-=======
 /*Color */
 
 body {
-    background: -webkit-linear-gradient(90deg, #70e1f5 10%, #ffd194 90%); /* Chrome 10+, Saf5.1+ */
-    background:    -moz-linear-gradient(90deg, #70e1f5 10%, #ffd194 90%); /* FF3.6+ */
-    background:     -ms-linear-gradient(90deg, #70e1f5 10%, #ffd194 90%); /* IE10 */
-    background:      -o-linear-gradient(90deg, #70e1f5 10%, #ffd194 90%); /* Opera 11.10+ */
+    background: -webkit-linear-gradient(90deg, #70e1f5 10%, #ffd194 90%); /* Chrome 10+, Saf5.1+ */ /* FF3.6+ */ /* IE10 */ /* Opera 11.10+ */
+    background:         -webkit-linear-gradient(0deg, #70e1f5 10%, #ffd194 90%);
     background:         linear-gradient(90deg, #70e1f5 10%, #ffd194 90%); /* W3C */
 
 }
 
 @media (min-width: 800px) {
     .content {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
         max-width: 60vw;
         border-radius: 2em;
+        -webkit-box-ordinal-group: 1;
+        -webkit-order: 0;
+        -ms-flex-order: 0;
         order: 0;
     }
     #websmith, #ember, #angular, #react, #backbone {
@@ -159,6 +134,10 @@ body {
     }
 
     .show {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
         flex-direction: row;
     }
 
@@ -169,6 +148,5 @@ body {
 
     /* Colors */
 
-   }
+}
 
->>>>>>> Added the projekt as current.

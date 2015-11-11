@@ -2,6 +2,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Webbfrontend projekt</title>
   <link rel="stylesheet" href="style/normalize.css">
   <link rel="stylesheet" href="style/style.css">
@@ -9,26 +10,32 @@
 </head>
 <body>
   <header>
-    
+
     <nav>
-      <figure>
-        <img src="img/wsfav.svg" alt="websmith logo">
-        <figcaption>Websmith</figcaption>
-      </figure>
-      <figure>
+      <figure class="ember">
         <img src="img/tomster.svg" alt="Ember logo">
         <figcaption>Ember</figcaption>
       </figure>
-      <figure>
+
+      <figure class="angular">
         <img src="img/angular-logo.svg" alt="Angular logo">
         <figcaption>Angular</figcaption>
       </figure>
-      <figure>
+
+      <figure class="websmith">
+        <img src="img/wsfav.svg" alt="websmith logo">
+        <figcaption>Websmith</figcaption>
+      </figure>
+
+      <figure class="backbone">
+
         <img src="img/backbone.svg" alt="Backbone logo">
         <figcaption>Backbone</figcaption>
       </figure>
-      <figure>
-        <img src="img/React.js_logo.svg" alt="React Logo">
+
+      <figure class="react">
+        <img src="img/react.svg" alt="React Logo">
+
         <figcaption>React</figcaption>
       </figure>
 
@@ -36,12 +43,15 @@
   </header>
 
   <article class="container">
-    <aside>
-      <h4>Länkar</h4>
-      <p>I detta fält så finns det nyttiga länkar om alla ramverk</p>
-    </aside>
 
-    <article id="websmith">
+
+
+    <article class="" id="websmith">
+      <aside class="link">
+        <h4>Länkar</h4>
+        <p>I detta fält så finns det nyttiga länkar om alla ramverk</p>
+      </aside>
+
       <article class="content">
         <h1>JavaScript ramverk</h1>
         <h2>Vad är ett ramverk</h2>
@@ -69,15 +79,22 @@
 
         <h2>Min slutsats</h2>
       </article>
+        <aside class="githubinfo">
+          <h4>Github info</h4>
+        </aside>
     </article>
 
 
 
     <article class="show" id="ember">
-      <aside>
+
+
+      <aside class="link">
+
         <h4>Länkar</h4>
 
       </aside>
+
       <article class="content">
         <h1>EmberJS</h1>
         <h2>Vad är EmberJS</h2>
@@ -89,7 +106,10 @@
         <h2>Documentation</h2>
         <p>Embers dokumentation är fantastisk. Det finns dokumentation för alla ver</p>
       </article>
-      <aside class="embergit">
+
+
+      <aside class="githubinfo embergit">
+
         <h4>Github info</h4>
       </aside>
     </article>
@@ -97,10 +117,25 @@
 
 
 
+    <article id="angular">
+      <aside></aside>
+      <article class="content"></article>
+      <aside class="angulargit"></aside>
+    </article>
 
-    <article id="angular"></article>
-    <article id="backbone"></article>
-    <article id="react"></article>
+    <article id="backbone">
+      <aside></aside>
+      <article class="content"></article>
+      <aside class="backbonegit"></aside>
+    </article>
+
+
+
+    <article id="react">
+      <aside class="link"></aside>
+      <aside class="githubinfo reactgit"></aside>
+    </article>
+
   </article>
   <footer>
     <p>
