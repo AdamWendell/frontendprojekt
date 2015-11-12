@@ -1,4 +1,4 @@
-/* Flexing it up */
+/* Flexing it up with layout*/
 
 nav {
     display: -webkit-box;
@@ -51,6 +51,7 @@ article > article {
     order: -1;
     background-color: tomato;
     text-align: center;
+    overflow-x: auto;
 }
 
 aside, footer {
@@ -69,12 +70,9 @@ footer p {
 
 
 
-/* layout */
 
-header {
-    max-height: 15vh;
 
-}
+
 
 
 
@@ -83,8 +81,6 @@ header {
 
 figure img {
     display: none;
-    height: 10vh;
-    width: auto;
 }
 
 figure img:hover {
@@ -106,6 +102,43 @@ body {
 
 }
 
+
+/*Contact */
+#contact {
+    width: 600px;
+    margin-top: 25px;
+}
+
+#contact input, #contact textarea {
+    padding: 5px;
+    width: 471px;
+    margin: 0px 0px 10px 0px;
+    border: 2px solid #ccc;
+}
+
+#contact textarea {
+    height: 90px;
+}
+
+#contact textarea:focus, #contact input:focus {
+    border: 2px solid #900;
+}
+
+#contact input.submit-button {
+    width: 100px;
+    float: right;
+    background-color: green;
+}
+
+label {
+    float: left;
+    text-align: right;
+    margin-right: 15px;
+    width: 100px;
+    padding-top: 5px;
+}
+
+
 @media (min-width: 800px) {
     .content {
         display: -webkit-box;
@@ -120,7 +153,7 @@ body {
         order: 0;
     }
     #websmith, #ember, #angular, #react, #backbone {
-        height: 75vh;
+        height: 73vh;
     }
     aside {
         width: 20vw;
@@ -146,6 +179,10 @@ body {
         max-height: 100vh;
     }
 
+    header {
+        max-height: 15vh;
+
+    }
     /* Colors */
 
 }

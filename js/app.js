@@ -11,7 +11,11 @@ function dryGetter(url, inputClass) {
   })
 }
 
-dryGetter("https://api.github.com/repos/facebook/react", ".embergit");
+dryGetter("https://api.github.com/repos/emberjs/ember.js", ".embergit");
+dryGetter("https://api.github.com/repos/angular/angular.js", ".angulargit");
+dryGetter("https://api.github.com/repos/jashkenas/backbone", ".backbonegit");
+dryGetter("https://api.github.com/repos/facebook/react", ".reactgit");
+
 
 //Nav funktionalitet
 
@@ -19,23 +23,30 @@ dryGetter("https://api.github.com/repos/facebook/react", ".embergit");
 
 $(".ember").click(function () {
   $('.show').removeClass('show');
-  $('#ember').addClass('show')
+  $('#ember').addClass('show');
 });
 
 $(".websmith").click(function () {
   $('.show').removeClass('show');
-  $('#websmith').addClass('show')
+  $('#websmith').addClass('show');
 });
 
 $(".angular").click(function () {
   $('.show').removeClass('show');
-  $('#angular').addClass('show')
+  $('#angular').addClass('show');
 });
 $(".backbone").click(function () {
   $('.show').removeClass('show');
-  $('#backbone').addClass('show')
+  $('#backbone').addClass('show');
 });
 $(".react").click(function () {
   $('.show').removeClass('show');
-  $('#react').addClass('show')
+  $('#react').addClass('show');
+});
+
+
+// Animation
+
+$(".content").click(function () {
+  $(this).animate({backgroundColor: "black", opacity: 3/4, color: "white"}, "slow");
 });

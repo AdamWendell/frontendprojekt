@@ -46,7 +46,7 @@
 
 
 
-    <article class="" id="websmith">
+    <article class="show" id="websmith">
       <aside class="link">
         <h4>Länkar</h4>
         <p>I detta fält så finns det nyttiga länkar om alla ramverk</p>
@@ -77,16 +77,34 @@
           mig själv och kanske någon annan att välja sitt första ramverk att lära sig.
         </p>
 
-        <h2>Min slutsats</h2>
+        <div id="contact">
+
+          <form action="">
+            <label for="Name">Name:</label>
+            <input type="text" name="Name" id="Name" />
+
+
+            <label for="Email">Email:</label>
+            <input type="text" name="Email" id="Email" />
+
+            <label for="Message">Message:</label><br />
+            <textarea name="Message" rows="20" cols="20" id="Message"></textarea>
+
+            <input type="submit" name="submit" value="Submit" class="submit-button" />
+          </form>
+
+          <div style="clear: both;"></div>
+
       </article>
         <aside class="githubinfo">
           <h4>Github info</h4>
+          <p>Detta fält kommer uppdateras med github info om ramverken.</p>
         </aside>
     </article>
 
 
 
-    <article class="show" id="ember">
+    <article class="" id="ember">
 
 
       <aside class="link">
@@ -108,7 +126,7 @@
       </article>
 
 
-      <aside class="githubinfo embergit">
+      <aside class="embergit">
 
         <h4>Github info</h4>
       </aside>
@@ -120,20 +138,27 @@
     <article id="angular">
       <aside></aside>
       <article class="content"></article>
-      <aside class="angulargit"></aside>
+      <aside class="angulargit">
+       <h4> Github info</h4>
+      </aside>
     </article>
 
     <article id="backbone">
       <aside></aside>
       <article class="content"></article>
-      <aside class="backbonegit"></aside>
+      <aside class="backbonegit">
+        <h4>Github info</h4>
+      </aside>
     </article>
 
 
 
     <article id="react">
       <aside class="link"></aside>
-      <aside class="githubinfo reactgit"></aside>
+      <article class="content"></article>
+      <aside class="githubinfo reactgit">
+        <h4>Github info</h4>
+      </aside>
     </article>
 
   </article>
@@ -145,6 +170,7 @@
     <p>Sidan är skapad av Adam Wendell Åslund</p>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://code.jquery.com/color/jquery.color-2.1.2.min.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
